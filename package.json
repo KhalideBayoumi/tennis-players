@@ -1,0 +1,23 @@
+{
+  "name": "tennis-players",
+  "version": "1.0.0",
+  "description": "Simple Rest API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "Khalide Bayoumi",
+  "license": "ISC",
+  "dependencies": {
+    "chai-sorted": "^0.2.0",
+    "chai-things": "^0.2.0",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0"
+  }
+}

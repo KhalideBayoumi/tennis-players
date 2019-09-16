@@ -62,9 +62,17 @@ describe('GET /players', () => {
                 res.body.should.have.property('shortname');
                 res.body.should.have.property('sex');
                 res.body.should.have.property('country');
+                res.body.should.have.property('country').that.has.property('picture');
+                res.body.should.have.property('country').that.has.property('code');
                 res.body.should.have.property('picture');
                 res.body.should.have.property('data');
-                
+                res.body.should.have.property('data').that.has.property('rank');
+                res.body.should.have.property('data').that.has.property('points');
+                res.body.should.have.property('data').that.has.property('weight');
+                res.body.should.have.property('data').that.has.property('height');
+                res.body.should.have.property('data').that.has.property('age');
+                res.body.should.have.property('data').that.has.property('last');
+
               done();
             });
     });
